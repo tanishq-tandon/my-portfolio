@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d0f;
+    color: #e0e0e0;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #13131a;
+    border-bottom: 1px solid #1e1e2e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.hero-greeting {
+    color: #a78bfa;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa, #f0abfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.hero-role {
+    font-size: 24px;
+    color: #60a5fa;
+    font-weight: 400;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.hero-desc {
+    color: #9ca3af;
+    font-size: 16px;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    color: #0d0d0f;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    transition: opacity 0.3s;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+.btn-secondary {
+    padding: 14px 32px;
+    background: transparent;
+    color: #a78bfa;
+    border: 1px solid #a78bfa;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #a78bfa;
+    color: #0d0d0f;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 60px;
+    border-top: 1px solid #1e1e2e;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #a78bfa;
+    margin-bottom: 40px;
+    border: none;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+/* TECH STACK */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-card {
+    background-color: #1e1e2e;
+    color: #a78bfa;
+    border: 1px solid #2a2a3d;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.tech-card:hover {
+    background-color: #a78bfa;
+    color: #0d0d0f;
+    transform: translateY(-3px);
+}
+
+/* TABLE */
+.table-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1e1e2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #13131a;
+}
+
+th {
+    background-color: #1e1e2e;
+    color: #a78bfa;
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #1e1e2e;
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+tr:hover {
+    background-color: #1a1a2e;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.badge.done {
+    background-color: #052e16;
+    color: #4ade80;
+}
+
+.badge.progress {
+    background-color: #1e1b4b;
+    color: #a78bfa;
+}
+
+/* CONTACT */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #13131a;
+    border: 1px solid #2a2a3d;
+    color: #e0e0e0;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #a78bfa;
+}
+
+.contact-form button {
+    padding: 14px;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    color: #0d0d0f;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    transition: opacity 0.3s;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+/* FOOTER */
+.footer {
+    padding: 30px 60px;
+    border-top: 1px solid #1e1e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.footer span {
+    color: #a78bfa;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #a78bfa;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 0 20px;
+        min-height: 80vh;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .hero-role {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        text-align: center;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .tech-stack {
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+}
